@@ -1,0 +1,53 @@
+@keyframes rotar {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.moneda {
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  animation: rotar 2s linear infinite;
+}
+
+.cara,
+.side,
+.cruz {
+  background-color: #dbb000;
+  border-radius: 50%;
+  width: 20%;
+}
+
+.cara {
+  transform: scaleX(-1);
+}
+
+.cruz {
+  position: absolute;
+  transform: translateZ(10px);
+}
+
+.side {
+  aspect-ratio: 1;
+  position: absolute;
+}
+
+.side1 {
+  transform: translateZ(2px);
+}
+
+.side2 {
+  transform: translateZ(4px);
+}
+
+.side3 {
+  transform: translateZ(6px);
+}
+
+.side4 {
+  transform: translateZ(8px);
+}

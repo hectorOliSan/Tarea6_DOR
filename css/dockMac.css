@@ -1,0 +1,58 @@
+.dock {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: LightSlateGray;
+  display: flex;
+  justify-content: center;
+}
+
+.dock ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.dock ul > li {
+  margin-inline: 10px;
+  transition: all .3s;
+}
+
+.dock ul > li:hover {
+  color: green;
+  margin-inline: 20px;
+  transform: scale(2) translateY(-10px);
+}
+
+.dock ul > li:nth-child(1):hover ~ li:nth-child(2),
+.dock ul > li:nth-child(2):hover ~ li:nth-child(3),
+.dock ul > li:nth-child(3):hover ~ li:nth-child(4),
+.dock ul > li:nth-child(4):hover ~ li:nth-child(5),
+.dock ul > li:nth-child(5):hover ~ li:nth-child(6),
+.dock ul > li:nth-child(6):hover ~ li:nth-child(7),
+.dock ul > li:nth-child(7):hover ~ li:nth-child(8),
+.dock ul > li:nth-child(8):hover ~ li:nth-child(9),
+.dock ul > li:nth-child(9):hover ~ li:nth-child(10),
+.dock ul > li:nth-child(10):hover ~ li:nth-child(11),
+.dock ul > li:nth-child(11):hover ~ li:nth-child(12),
+.dock ul > li:nth-child(12):hover ~ li:nth-child(13) {
+  color: greenyellow;
+  margin-inline: 17px;
+  transform: scale(1.7) translateY(-7px);
+}
+
+.dock ul > li:nth-child(1):hover ~ li:nth-child(3),
+.dock ul > li:nth-child(2):hover ~ li:nth-child(4),
+.dock ul > li:nth-child(3):hover ~ li:nth-child(5),
+.dock ul > li:nth-child(4):hover ~ li:nth-child(6),
+.dock ul > li:nth-child(5):hover ~ li:nth-child(7),
+.dock ul > li:nth-child(6):hover ~ li:nth-child(8),
+.dock ul > li:nth-child(7):hover ~ li:nth-child(9),
+.dock ul > li:nth-child(8):hover ~ li:nth-child(10),
+.dock ul > li:nth-child(9):hover ~ li:nth-child(11),
+.dock ul > li:nth-child(10):hover ~ li:nth-child(12),
+.dock ul > li:nth-child(11):hover ~ li:nth-child(13) {
+  color: yellow;
+  margin-inline: 13px;
+  transform: scale(1.3) translateY(-3px);
+}
